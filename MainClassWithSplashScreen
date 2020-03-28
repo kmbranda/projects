@@ -32,7 +32,7 @@ public class MainClass extends Application{
 		splashScreenDelay.setOnFinished(f -> {
 		    primaryStage.show();
 		    // Close the splash screen
-		    sp;ashScreen.hideWindow();
+		    splashScreen.hideWindow();
 		});
 		splashScreenDelay.playFromStart();
 		
