@@ -16,7 +16,7 @@ import javafx.util.Duration;
 public class MainClass extends Application{
 	
 	// Splash screen to be used in start method	
-	 SplashScreenController spashScreen = new SplashScreenController();
+	 SplashScreenController splashScreen = new SplashScreenController();
 	
 	public void start(Stage primaryStage) throws Exception {
         
@@ -26,13 +26,13 @@ public class MainClass extends Application{
 		primaryStage.setScene(sn);
 		
 		//Show the splash screen
-		spashScreen.showWindow();
+		splashScreen.showWindow();
 		// Display splash screen for 2 seconds, then load main application
 		PauseTransition splashScreenDelay = new PauseTransition(Duration.seconds(3));
 		splashScreenDelay.setOnFinished(f -> {
 		    primaryStage.show();
 		    // Close the splash screen
-		    spashScreen.hideWindow();
+		    sp;ashScreen.hideWindow();
 		});
 		splashScreenDelay.playFromStart();
 		
